@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Testing</title>
+    </head>
+<body>
+    <h2>User Registration Form</h2>
+<form>
+        <p>
+            First name:
+            <input type="text" name="firstname" maxlength="15">
+            <br>
+            <br>
+            Last Name:
+            <input type="text" name="lastname" maxlength="15">
+            <br>
+            <br>
+            Password:
+            <input type="password" name="password" maxlength="15">
+        </p>
+        <p>Bio: <textarea name="" id="" cols="30" rows="10"></textarea></p>
+
+<fieldset>
+        <legend> Gender:</legend>
+        <br>
+        <input type="radio" name="Gender" id="Male">
+        Male
+        <br> <input type="radio" name="Gender" id="Female">
+        Female
+        <br><input type="radio" name="Gender" id="Other">
+        Other
+</fieldset>
+<fieldset>
+        <legend>Intersts:</legend>
+            <br>
+            <input type="checkbox" name="service" id="Music" value="Music" >
+            Music
+            <br> <input type="checkbox" name="service" value="Sports" id="Sports">
+            Sports
+            <br><input type="checkbox" name="service" value="Reading" id="Reading">
+            Reading
+</fieldset>
+        <p>Country:
+<select name="Country">
+        <option value="United stated">United stated</option>
+        <option value="Pakistan">Pakistan</option>
+        <option value="India">India</option>
+        <option value="Iran">Iran</option>
+        <option value="Turky">Turky</option>
+</select>
+</p>
+
+<p>Preferred Colors: <select name="colors" size="4" multiple="multiple">
+<option value="Red">Red</option>
+<option value="Blue">Blue</option>
+<option value="Green">Green</option>
+<option value="Yellow">Yellow</option>
+<option value="Purple">Purple</option>
+<option value="Black">Black</option>
+</select></p>
+
+<p>Profile picture: <input type="file" name="Choose file"></p>
+<p>Birthdate: <input type="date"></p>
+<p>Email: <input required type="text" name="Email" id="" ></p>
+<p>Website: <input type="text" name="Website" id=""> </p>
+<p>Search: <input type="text" name="Search" id=""></p>
+<p><button>Submit</button></p>
+</form>
+</body>
+</html>
