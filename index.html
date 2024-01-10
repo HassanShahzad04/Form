@@ -10,15 +10,15 @@
 <form>
         <p>
             First name:
-            <input type="text" name="firstname" maxlength="15">
+            <input required type="text" name="firstname" maxlength="15">
             <br>
             <br>
             Last Name:
-            <input type="text" name="lastname" maxlength="15">
+            <input required type="text" name="lastname" maxlength="15">
             <br>
             <br>
             Password:
-            <input type="password" name="password" maxlength="15">
+            <input required type="password" name="password" maxlength="15">
         </p>
         <p>Bio: <textarea name="" id="" cols="30" rows="10"></textarea></p>
 
@@ -26,21 +26,21 @@
         <legend> Gender:</legend>
         <br>
         <input type="radio" name="Gender" id="Male">
-        Male
+        <label for="Male">Male</label>
         <br> <input type="radio" name="Gender" id="Female">
-        Female
+         <label for="Female">Female</label>
         <br><input type="radio" name="Gender" id="Other">
-        Other
+         <label for="Other">Other</label>
 </fieldset>
 <fieldset>
         <legend>Intersts:</legend>
-            <br>
-            <input type="checkbox" name="service" id="Music" value="Music" >
-            Music
-            <br> <input type="checkbox" name="service" value="Sports" id="Sports">
-            Sports
-            <br><input type="checkbox" name="service" value="Reading" id="Reading">
-            Reading
+            <br> 
+             <input type="checkbox" name="service" id="Music" value="Music" class="radio" >
+            <label for="Music">Music</label>
+            <br> <input type="checkbox" name="service" value="Sports" id="Sports" class="radio" >
+            <label for="Sports">Sports</label>
+            <br><input type="checkbox" name="service" value="Reading" id="Reading" class="radio" >
+            <label for="Reading">Reading</label>
 </fieldset>
         <p>Country:
 <select name="Country">
@@ -61,8 +61,8 @@
 <option value="Black">Black</option>
 </select></p>
 
-<p>Profile picture: <input type="file" name="Choose file"></p>
-<p>Birthdate: <input type="date"></p>
+<p>Profile picture: <input required type="file" name="Choose file"></p>
+<p>Birthdate: <input required type="date"></p>
 <p>Email: <input required type="text" name="Email" id="" ></p>
 <p>Website: <input type="text" name="Website" id=""> </p>
 <p>Search: <input type="text" name="Search" id=""></p>
